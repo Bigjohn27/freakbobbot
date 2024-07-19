@@ -25,9 +25,9 @@ async def on_message(message):
 
     # Check if the message contains the word 'hey' (case insensitive)
     if 'freakbob' in message.content.lower():
-        await message.channel.send(file=discord.File('freakbob full.jpg'))
+        await message.channel.send(file=discord.File('bob.jpg'))
     if ':emoji_1:' in message.content:
-        await message.channel.send(file=discord.File('freakbob full.jpg'))
+        await message.channel.send(file=discord.File('bob.jpg'))
 
 
     # Ensure commands are processed as well
