@@ -6,15 +6,12 @@ from dotenv import load_dotenv
 import random
 
 load_dotenv()
-
-bz = int(os.getenv('b'))
-
 ge = int(os.getenv('g'))
 wi = int(os.getenv('w'))
 di = int(os.getenv('d'))
 ki = int(os.getenv('k'))
 
-People = [ge, wi, di, ki, bz]
+People = [ge, wi, di, ki]
 
 diList = ['Dino1.ogg', 'Dino2.ogg']
 geList = ['George1.ogg', 'George2.ogg']
@@ -22,7 +19,7 @@ kiList = ['Kieran1.ogg', 'Kieran2.ogg']
 wiList = ['Willy1.ogg', 'Willy2.ogg']
 
 def findAudio(thePerson):
-    if thePerson == ge or bz:
+    if thePerson == ge:
         return random.choice(geList)
     if thePerson == di:
         return random.choice(diList)
