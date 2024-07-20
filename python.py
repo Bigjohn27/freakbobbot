@@ -33,11 +33,11 @@ async def on_message(message):
         await message.channel.send(file=discord.File('bob.jpg'))
     if ':emoji_1:' in message.content:
         await message.channel.send(file=discord.File('bob.jpg'))
-    if 'deee' in message.content.lower():
+    if 'daaaa' in message.content.lower():
         await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
-    if 'deeeeeeeee' in message.content.lower() and message.author.id == bz:
+    if 'diiii' in message.content.lower() and message.author.id == bz:
         await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
-    if 'deeeeeeeeeeee' in message.content.lower() and message.author.id != bz:
+    if 'dwwww' in message.content.lower() and message.author.id != bz:
         await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
 
 
