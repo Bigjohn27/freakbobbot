@@ -50,7 +50,7 @@ async def on_message(message):
         return
 
     # Check if the message contains the word 'freakbob' or the freakbob emoji (case insensitive)
-    if 'freakbob' or ':emoji_1:' in message.content.lower():
+    if 'freakbob' in message.content.lower() or ':emoji_1:' in message.content.lower():
         await message.channel.send(file=discord.File('bob.jpg'))
         if message.author.id in People:
             person = message.author.id
