@@ -2,6 +2,11 @@ import discord
 from discord.ext import commands
 import os
 from keep_alive import keep_alive  # Import the keep_alive function
+from dotenv import load_dotenv
+
+load_dotenv()
+
+bz = os.getenv('b')
 
 # Define intents
 intents = discord.Intents.default()
@@ -28,7 +33,9 @@ async def on_message(message):
         await message.channel.send(file=discord.File('bob.jpg'))
     if ':emoji_1:' in message.content:
         await message.channel.send(file=discord.File('bob.jpg'))
-    if 'dadadadadadadadadadadadadada' in message.content.lower():
+    if 'deee' in message.content.lower():
+        await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
+    if 'deeeeeeeee' in message.content.lower() and message.author.id == bz:
         await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
 
 
