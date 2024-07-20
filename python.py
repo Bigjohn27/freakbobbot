@@ -6,7 +6,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-bz = os.getenv('b')
+bz = int(os.getenv('b'))
 
 # Define intents
 intents = discord.Intents.default()
