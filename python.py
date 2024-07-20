@@ -29,7 +29,7 @@ async def on_message(message):
     if ':emoji_1:' in message.content:
         await message.channel.send(file=discord.File('bob.jpg'))
     if 'dadadadadadadadadadadadadada' in message.content.lower():
-        await message.channel.send(file=discord.File('George1.ogg'))
+        await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.'))
 
 
     # Ensure commands are processed as well
