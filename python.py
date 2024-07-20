@@ -23,7 +23,7 @@ async def on_message(message):
     if message.author == bot.user:
         return
 
-    # Check if the message contains the word 'hey' (case insensitive)
+    # Check if the message contains the word 'freakbob' or the freakbob emoji (case insensitive)
     if 'freakbob' in message.content.lower():
         await message.channel.send(file=discord.File('bob.jpg'))
     if ':emoji_1:' in message.content:
@@ -38,5 +38,5 @@ async def on_message(message):
 # Keep the bot alive
 keep_alive()
 
-# Run the bot with the token from Replit secrets
+# Run the bot with the token from Render secrets
 bot.run(os.getenv('DISCORD_BOT_TOKEN'))
