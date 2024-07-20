@@ -53,20 +53,11 @@ async def on_message(message):
         return
 
     # Check if the message contains the word 'freakbob' or the freakbob emoji (case insensitive)
-    if 'freakbob' in message.content.lower():
+    if 'freakbob' or ':emoji_1:' in message.content.lower():
         await message.channel.send(file=discord.File('bob.jpg'))
         if message.author.id in People:
             person = message.author.id
             await message.channel.send(file=discord.File(findAudio(person), filename='Pick up the phone.ogg'))                
-    if ':emoji_1:' in message.content:
-        await message.channel.send(file=discord.File('bob.jpg'))
-    if 'daaaa' in message.content.lower():
-        await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
-    if 'diiii' in message.content.lower() and message.author.id == bz:
-        await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
-    if 'dwwww' in message.content.lower() and message.author.id != bz:
-        await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
-
 
     # Ensure commands are processed as well
     await bot.process_commands(message)
