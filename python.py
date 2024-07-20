@@ -37,6 +37,8 @@ async def on_message(message):
         await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
     if 'deeeeeeeee' in message.content.lower() and message.author.id == bz:
         await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
+    if 'deeeeeeeeeeee' in message.content.lower() and message.author.id != bz:
+        await message.channel.send(file=discord.File('George1.ogg', filename='Pick up the phone.ogg'))
 
 
     # Ensure commands are processed as well
